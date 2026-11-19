@@ -1,0 +1,25 @@
+=== SHIELD parallel archive scan ===
+SoLEXS : E:/SoLEXS  (Feb 2024 - Jun 2026)
+HEL1OS : E:/HEL1OS  (Nov 2023 - Jun 2026)
+Scan   : 2024-02-01 -> 2026-06-27
+Workers: 6
+
+Parallel scan: 957 chunks across 6 workers
+  100/957 (10%) | flares=32 errors=0
+  200/957 (21%) | flares=98 errors=0
+  300/957 (31%) | flares=133 errors=0
+  400/957 (42%) | flares=159 errors=0
+  500/957 (52%) | flares=168 errors=0
+  600/957 (63%) | flares=185 errors=0
+  700/957 (73%) | flares=205 errors=0
+  800/957 (84%) | flares=231 errors=0
+  900/957 (94%) | flares=244 errors=0
+  957/957 (100%) | flares=255 errors=0
+  Results -> D:\Project\SHIELD\SHIELD\outputs\scan_results.csv
+
+=== SCAN COMPLETE in 44.9 min ===
+Days scanned   : 877.0
+Flares detected: 175
+False alarms/d : 0.328
+Mean gap (s)   : 20404.2
+Saved -> d:\Project\SHIELD\SHIELD\outputs\scan_all_summary.json

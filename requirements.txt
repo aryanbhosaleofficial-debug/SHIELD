@@ -1,0 +1,29 @@
+# =============================================================================
+# S.H.I.E.L.D. Core Engine — Dependencies
+# Solar Hazard Interception & Extra-orbital Logistics Dashboard
+# Team Suryastra · Bharatiya Antariksh Hackathon 2026 · Challenge #15
+# =============================================================================
+
+# --- Data Ingestion & Processing ---
+pandas>=2.2.0
+numpy>=1.26.0
+astropy>=6.0.0            # FITS file I/O for PRADAN SoLEXS/HEL1OS data
+cdflib>=1.3.0            # CDF file I/O (heliophysics/auxiliary products)
+pyarrow>=15.0.0          # Out-of-core Parquet column store (100+ GB scaling)
+
+# --- Physics & Signal Processing ---
+scipy>=1.12.0             # Rolling statistics, signal processing, interpolation
+
+# --- Solar Physics Utilities ---
+sunpy>=5.1.0              # Solar data standards, coordinate/time handling
+
+# --- Machine Learning (Layer 2/3 — supervised models trained on the year of
+#     real data + GOES catalog labels). Physics core still runs without these. ---
+scikit-learn>=1.4.0       # detector, severity classifier, forecaster
+xgboost>=2.0.0            # gradient-boosted alternative
+
+# --- Visualization / Dashboard ---
+plotly>=5.18.0            # Interactive light curves, stage indicators
+
+# --- Utilities ---
+tqdm>=4.66.0              # Progress bars for batch processing

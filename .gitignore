@@ -1,0 +1,38 @@
+# =============================================================================
+# S.H.I.E.L.D. — Git ignore rules
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Environment / BLAS ---
+.env
+
+# --- Raw + heavy data (never commit the 100 GB batches) ---
+data/raw/
+*.fits
+*.fit
+*.fts
+*.cdf
+*.zip
+
+# --- Generated data-store artifacts ---
+data/processed/_manifest.json
+data/processed/_active_batch.txt
+data/processed/parquet_store/
+
+# --- Dashboard (Next.js) ---
+dashboard/.next/
+dashboard/node_modules/
+dashboard/out/
+dashboard/public/shield_data.json
+
+# --- OS noise ---
+Thumbs.db
+.DS_Store

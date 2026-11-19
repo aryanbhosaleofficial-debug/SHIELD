@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/Project/AI Timetable/AI-TimeTable/notes//**)",
+      "Read(//d/Project/AI Timetable/AI-TimeTable//**)"
+    ]
+  }
+}

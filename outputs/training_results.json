@@ -1,0 +1,69 @@
+{
+  "model1_detector": {
+    "n_train": 232724,
+    "n_test": 99740,
+    "n_flare_windows_test": 3572,
+    "roc_auc": 0.935,
+    "precision": 0.265,
+    "recall": 0.842,
+    "recall_by_class": {
+      "C": {
+        "caught": 2467,
+        "total": 2795,
+        "recall": 0.883
+      },
+      "M": {
+        "caught": 227,
+        "total": 279,
+        "recall": 0.814
+      },
+      "X": {
+        "caught": 24,
+        "total": 28,
+        "recall": 0.857
+      }
+    },
+    "feature_importance": {
+      "peak": 0.054,
+      "peak_over_base": 0.397,
+      "rise": 0.027,
+      "mean": 0.09,
+      "std": 0.298,
+      "d1_max": 0.071,
+      "d2_max": 0.03,
+      "frac_rise": 0.032
+    }
+  },
+  "model2_dual": {
+    "n_train": 214,
+    "n_test": 93,
+    "roc_auc": 0.854,
+    "precision": 0.986,
+    "recall": 0.833,
+    "top_features": {
+      "n_hls_detect": 0.636,
+      "slx_peak_bg": 0.04,
+      "slx_d1_mean": 0.039,
+      "hls_peak": 0.037,
+      "slx_rise": 0.034
+    }
+  },
+  "model3_forecaster": {
+    "n_train": 4908,
+    "n_test": 2104,
+    "test_base_rate": 0.587,
+    "roc_auc": 0.754,
+    "brier_ml": 0.1957,
+    "brier_climatology": 0.2876,
+    "brier_poisson": 0.5928,
+    "skill_vs_climatology": 0.319,
+    "skill_vs_poisson": 0.67,
+    "top_features": {
+      "nM_48h": 0.478,
+      "nM_24h": 0.194,
+      "max_flux_24h_log": 0.073,
+      "hrs_since_lastM": 0.059,
+      "n_48h": 0.052
+    }
+  }
+}
